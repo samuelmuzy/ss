@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criatividade dialógica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="profLetras.webp" type="image/x-icon">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabeca">
+        <div>
+            <img class="imgcabe2" src="logo.png" alt="">
+            <img class="imgcabe" src="ifes-horizontal-cor.png" alt="img-cabe">
+        </div>
+        <div class="iten_cabe">
+            <a class="itens" href="index.html"><p class="itens">Principal </p></a>
+            <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+            <div>
+                <div onclick="drop()" class="setaReta">
+                    <a href="#" id="itenDrop" class="itens"><p class="itens">Oficinas</p></a>
+                    <a href="#"><img id="imagemSeta" style="width: 20px;" src="seta-para-baixo (1).png" alt=""></a>
+                </div>
+                <ul id="dropdown" class="drop">
+                    <a style="text-decoration:none  ; color: black"  href="oficina.html"><li class="hoverItens">Início</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo1.html"><li class="hoverItens">Módulo 1</li></a>
+                    <a style="text-decoration:none ; color: black" href="#"><li class="hoverItens">Módulo 2</li></a>
+                    <a style="text-decoration:none ; color: black" href="#"><li class="hoverItens">Módulo 3</li></a>
+                </ul>
+            </div>
+            <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+            <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+        </div>
+        <div class="btn-abrir-botao" onclick="abrir()" id="abrir-menu">
+            <img class="invi" src="list.svg" alt="">
+        </div>
+        <div class="abrir-menu" id="menu-mobile">
+            <div onclick="fechar()" class="btn-fechar">
+                <img src="x-lg.svg" alt="">
+            </div>
+            <div>
+                <a class="itens" href="index.html"><p class="itens">Principal</p></a>
+                <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+                <a class="itens" href="oficina.html"><p class="itens">Oficinas</p></a>
+                <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+                <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+                <a class="itens" href="modulo1.html"><p class="itens">Módulo 1</p></a>
+                <a class="itens" href="modulo2.html"><p class="itens">Módulo 2</p></a>
+                <a class="itens" href="modulo3.html"><p class="itens">Módulo 3</p></a>
+
+            </div>
+        </div>
+        
+        <div class="overlay-menu">
+
+        </div>
+    </header>
+    <hr class="linha">
+    <main class="principal">
+        <div class="espaco">
+            <h1 class="iten1">Criatividade dialógica</h1>
+            <h2 class="iten2">O <i>podcast</i> nas aulas de Língua Portuguesa</h2>
+            <p class="iten3">Este site aborda o desenvolvimento de práticas dialógicas que visam compreender 
+            o papel que a linguagem e a língua desempenham nas relações sociais, desperta a criatividade  e a sensibilidade de adolescentes e jovens.</p>
+
+        </div>
+        <img class="imgPrincipal" src="cinzas.png" alt="">
+        
+    </main>
+    <footer class="baixo">
+        <div class="backfo">
+            <div>
+                <p class="letra">Conheça meu trabalho </p>
+                <section class="imagens">
+                    <a href="https://www.instagram.com/claudiamuzy2021/"><img class="img_footer" src="instagram.png" alt="inst"></a>
+                    <a href="https://www.facebook.com/claudia.rodriguesmuzyfernandes"><img class="img_footer" src="facebook.png" alt=""></a>
+                    <a href="https://open.spotify.com/show/3XS2YpdyxJepp1uchK2nWR?si=AaGDQTd-TJqRi4_aApYYJw&nd=1&dlsi=cd945a7f5d904057"><img class="img_footer" src="spotify.png" alt=""></a>
+                    
+                </section>
+            </div>
+            
+            <div class="credi">
+                <p class="letra">Creditos</p>
+                <a class="creditos" href="https://storyset.com/social-media">Social media illustrations by Storyset</a>
+            </div>
+            
+            <img class="img2" src="logo.png" alt="">
+            
+        </div>
+        
+        
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fce6ef;
+}
+.imgcabe{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+}
+.cabeca{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+}
+.iten_cabe{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 10%;
+    align-items: center;
+}
+.itens{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.itens:hover{
+    color: #dd6798; 
+}
+.drop{
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 999;
+    width: 6%;
+    border: solid 1px black;
+}
+
+.hoverItens:hover{
+    background-color: #f379ac;
+}
+.setaReta{
+    display: flex;
+    flex-direction: row;
+    
+}
+.seta{
+    width: 20px;
+}
+.drop li{
+    padding: 15%;
+    background-color: #f6d3e2;
+    z-index: 999;
+    display: block;
+    text-align: center;
+    
+}
+.drop:hover{
+    display: block;
+}
+/*menu mobile*/
+.menu-mobile{
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+    width: 70%;
+    overflow: hidden;
+    transition: 5.s;
+}
+.abrir-menu{
+    width: 0%;    
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+    overflow: hidden;
+    transition: 5.s;
+  
+}
+.menu-mobile div a{
+    text-align: right;
+}
+.btn-abrir-botao img{
+    width: 0px;
+    
+}
+.menu-mobile .btn-fechar img{
+    width: 10%;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+.menu-mobile div a p{
+    color: black;
+    background-color: #f6d3e2;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+}
+.menu-mobile div a p:hover{
+    background-color: #dd6798;
+    color: black;
+}
+.overlay-menu{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+}
+/*principal*/
+.principal{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+.iten1{
+    font-size: 50px;
+    color: #141415;
+    font-family: 'Arvo', serif;
+
+}
+.iten2{
+    font-family: 'Arvo', serif;
+   color: #252525;
+}
+.iten3{
+    text-align: start;
+    width: 60%;
+    color:#0c0c0c;
+    font-family: 'Alegreya', serif;
+}
+.espaco{
+    margin-left: 4%;
+    
+}
+.imgPrincipal{
+    width: 40%;
+    height: 70vh;
+    margin-right: 5%;
+   
+   
+}
+/*footer*/
+.baixo{
+    background-color: white;
+    height: 100%;
+    padding-left: 1%;
+    padding-top: 1%;
+    gap: 2px;
+    padding-bottom: 2%;
+}
+.letra{
+    background-color: white;
+    font-size: 25px;
+    padding-bottom: 5%;
+}
+.img_footer{
+    padding-top: 1%;
+    width: 50px;
+    background-color: white;
+    
+}
+.imagens{
+    display: flex;
+    margin-top: 1%;
+    gap: 10px;
+    background-color: white;
+}
+.iten3{
+    margin-top: 5%;
+    font-size: 25px;
+}
+.img2{
+    width: 100px;
+    margin-right: 2%;
+}
+.backfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.creditos{
+    text-decoration: none;
+}
+/*mobile*/
+@media screen and (max-width: 1195px){
+    .imgPrincipal{
+        width: 100%;
+    }
+    .imgcabe{
+        width: 50%;
+        height: 30%;
+    }                   /*cabecario*/
+    .imgcabe2{
+        width: 15%;
+        height: 10%;
+    }
+    .principal{
+        flex-direction: column-reverse;
+    }
+    .invi{
+        width: 40px; /*cabecario*/
+    }
+    .btn-abrir-botao img{
+        width: 40px;            /*cabecario*/
+    }
+    .iten1{
+        font-size: 195%;
+        text-align: center;
+    }
+    .iten2{
+        text-align: center;
+    }
+    .iten3{
+        text-align:start;
+        width: 100%;
+        font-size: 25px;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        
+    }
+    /*cabecario*/
+
+    .iten_cabe{
+        display: none;
+    }
+    .img2{
+        width: 12%;
+    }
+    .baixo{
+        height: 100%;
+    }
+    
+    /*main*/
+    .imgPrincipal{
+        width: 90%;
+        height: 80%;
+        margin-right: 0%;
+        margin-bottom: 5%
+        ;
+    }
+    /*footer*/
+    .backfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        gap: 20px;
+    }
+    .baixo{
+        text-align: center;
+    }
+   
+}
